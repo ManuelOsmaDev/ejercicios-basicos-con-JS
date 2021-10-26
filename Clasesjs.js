@@ -43,12 +43,22 @@ console.log(hombre2.nombre)
 
 class PersonaE{
 
+    static get Max_Obj(){
+        return 6;
+    }
+    email = 'valor default'
+
     static contadorObjetosPersonas = 0;
 
     constructor(nombre,apellido,edad){
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        if(PersonaE.contadorObjetosPersonas < PersonaE.Max_Obj){
+            this.idPersona = PersonaE.contadorObjetosPersonas++;
+        }else{
+            console.log('maximo de objetos permitidos')
+        }
     }
     get apellido(){
         return this._apellido
@@ -117,13 +127,17 @@ PersonaE.saluda1(Empleado1)
  PersonaE.contadorObjetosPersonas
 console.log(PersonaE.contadorObjetosPersonas)
 
+console.log(Empleado1.toString())
+
 
 console.log(Empleado.contadorObjetosPersonas)
 
 
+console.log(hombreE.email)
+console.log(Empleado1.email)//se puede porque es un objeto
+console.log(PersonaE.email)//no se puede por que es un clase 
 
 
 
 
-
-
+console.log(PersonaE.Max_Obj)
