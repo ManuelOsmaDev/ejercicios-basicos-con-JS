@@ -31,7 +31,7 @@ if(mes == 1 || mes == 2 || mes== 12){
 }
 
 //calculo de hora con if else
-let hora = 1
+let hora = 40
 let mensaje
 
 
@@ -44,7 +44,7 @@ if(hora >=6 && hora <=11){
 }else if(hora >=0 && hora <6){
     mensaje ='durmiendo'
 }else{
-    mensaje= 'incorrecto'
+    mensaje= 'hora no valida'
 }
 
 

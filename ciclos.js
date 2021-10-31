@@ -17,7 +17,6 @@ while (c<=10){
 }
 
 console.log('fin ciclo')
-
 //ciclo do while
 let count = 0
 do{

@@ -116,6 +116,12 @@ let cliente2 = new cliente('sherman','ortuha',28, new Date())
 console.log(cliente2.toString())
 
 
+let cliente3 = new cliente('deison','gonzales',20,new Date())
+console.log(cliente3.toString())
+
+
+let empleado3 = new Empleado('deison','gonzales',1000000)
+console.log(empleado3.toString())
 
 
 
